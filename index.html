@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elite Air & Sea</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0a0f1c;
+  color: #fff;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(90deg, #001f3f, #0074D9);
+  padding: 40px;
+  text-align: center;
+}
+header h1 {
+  font-size: 3rem;
+}
+header p {
+  font-size: 1.2rem;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #111;
+  padding: 10px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* SECTION */
+.section {
+  padding: 40px;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+.card {
+  background: #111827;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+  transition: 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.card-content {
+  padding: 20px;
+}
+.card-content h3 {
+  margin-bottom: 10px;
+}
+.price {
+  color: #00ffcc;
+  font-weight: bold;
+}
+
+/* QUALITY */
+.quality {
+  background: #020617;
+  text-align: center;
+}
+.quality p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* CONTACT */
+.contact {
+  background: #111;
+  text-align: center;
+  padding: 40px;
+}
+.contact p {
+  margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+  background: #000;
+  text-align: center;
+  padding: 15px;
+  color: #aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Elite Air & Sea</h1>
+  <p>Luxury Yachts & Helicopters Across the World</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Yachts</a>
+  <a href="#">Helicopters</a>
+  <a href="#">Contact</a>
+</nav>
+
+<!-- LOCATIONS -->
+<section class="section">
+  <h2>Our Global Locations</h2>
+  <div class="grid">
+    <div class="card"><div class="card-content"><h3>Monaco</h3><p>Luxury Mediterranean hub</p></div></div>
+    <div class="card"><div class="card-content"><h3>London</h3><p>Premium UK services</p></div></div>
+    <div class="card"><div class="card-content"><h3>Sydney</h3><p>Oceanfront experiences</p></div></div>
+    <div class="card"><div class="card-content"><h3>Dubai</h3><p>Ultra-modern luxury fleet</p></div></div>
+  </div>
+</section>
+
+<!-- YACHTS -->
+<section class="section">
+  <h2>Luxury Yachts</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+      <div class="card-content">
+        <h3>Ocean Majesty</h3>
+        <p>Premium yacht with 5 decks, infinity pool.</p>
+        <p class="price">$8,500,000</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98">
+      <div class="card-content">
+        <h3>Silver Wave</h3>
+        <p>Modern design with smart automation.</p>
+        <p class="price">$6,200,000</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1521292270410-a8c4d716d518">
+      <div class="card-content">
+        <h3>Royal Horizon</h3>
+        <p>Ultra-luxury experience up to 10 guests.</p>
+        <p class="price">$9,900,000</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- HELICOPTERS -->
+<section class="section">
+  <h2>Private Helicopters</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1508610048659-a06b669e3321">
+      <div class="card-content">
+        <h3>SkyLux 300</h3>
+        <p>Fast, efficient, luxury seating.</p>
+        <p class="price">$3,500,000</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1504198266285-165a9b8d8b7b">
+      <div class="card-content">
+        <h3>Falcon Air Elite</h3>
+        <p>Top-tier comfort with panoramic view.</p>
+        <p class="price">$7,800,000</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1473968512647-3e447244af8f">
+      <div class="card-content">
+        <h3>Helios X</h3>
+        <p>Luxury meets high performance.</p>
+        <p class="price">$9,500,000</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- BUILD QUALITY -->
+<section class="section quality">
+  <h2>Build Quality & Engineering</h2>
+  <p>
+    Our yachts are crafted using marine-grade aluminum and carbon fiber composites, ensuring durability,
+    stability, and unmatched luxury. Interiors are designed by world-class designers with premium leather,
+    hardwood finishes, and smart automation systems.
+  </p>
+  <br>
+  <p>
+    Our helicopters feature advanced avionics, reinforced airframes, and noise-reduction technology.
+    Every unit undergoes strict quality testing to guarantee safety, performance, and comfort.
+  </p>
+</section>
+
+<!-- OPTIONS -->
+<section class="section">
+  <h2>Customization Options</h2>
+  <div class="grid">
+    <div class="card"><div class="card-content"><h3>Interior Design</h3><p>Luxury leather, gold trims, custom layouts</p></div></div>
+    <div class="card"><div class="card-content"><h3>Technology</h3><p>Smart control systems & AI navigation</p></div></div>
+    <div class="card"><div class="card-content"><h3>Entertainment</h3><p>Cinema, sound systems, gaming suites</p></div></div>
+    <div class="card"><div class="card-content"><h3>Security</h3><p>Advanced safety & surveillance systems</p></div></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+  <h2>Contact Us</h2>
+  <p>Email: contact@eliteairsea.com</p>
+  <p>Phone: +44 20 7946 0958</p>
+  <p>Monaco Office: Port Hercules, Monaco</p>
+  <p>London Office: Canary Wharf, UK</p>
+  <p>Sydney Office: Darling Harbour, Australia</p>
+</section>
+
+<footer>
+  <p>&copy; 2026 Elite Air & Sea | Luxury Redefined</p>
+</footer>
+
+</body>
+</html>
